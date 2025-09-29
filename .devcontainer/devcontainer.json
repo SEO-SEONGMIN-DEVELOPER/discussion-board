@@ -1,0 +1,8 @@
+{
+  "name": "Spring Framework + React",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "18" }
+  },
+  "postCreateCommand": "cd frontend && npm install || true"
+}
