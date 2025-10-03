@@ -1,8 +1,10 @@
+provider: java
 build:
   steps:
     - name: Install Maven
       commands:
         - apt update
         - apt install -y maven
+        - mvn -version
 deploy:
-  startCommand: cd backend && mvn tomcat7:run
+  startCommand: mvn -f backend/pom.xml tomcat7:run
