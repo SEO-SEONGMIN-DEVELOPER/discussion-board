@@ -1,0 +1,10 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "mvn -f backend/pom.xml "
+    },
+  "deploy": {
+    "startCommand": "mvn -f backend/pom.xml tomcat7:run"
+    }
+}
