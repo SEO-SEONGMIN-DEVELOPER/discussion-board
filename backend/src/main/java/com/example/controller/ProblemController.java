@@ -6,7 +6,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/problems")
-@CrossOrigin(origins = "*")
+/* @CrossOrigin(origins = "*") */
 public class ProblemController {
 
     private List<Problem> problems = new ArrayList<>();
