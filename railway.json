@@ -2,7 +2,7 @@
   "$schema": "https://railway.com/railway.schema.json",
   "build": {
     "builder": "NIXPACKS",
-    "buildCommand": "sudo apt update && sudo apt install -y maven && mvn -version && mvn -X -f backend/pom.xml clean package"
+    "buildCommand": "sudo apt update && sudo apt install -y maven && mvn -version && mvn -X --fail-at-end -f backend/pom.xml clean package"
     },
   "deploy": {
     "startCommand": "mvn -f backend/pom.xml tomcat7:run"
