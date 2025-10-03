@@ -72,7 +72,6 @@
                 <target>17</target>
                 <reloadable>true</reloadable>
             </configuration>
-          <version>2.2</version>
         </plugin>
     </plugins>
   </build>
