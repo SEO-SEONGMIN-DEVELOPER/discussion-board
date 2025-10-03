@@ -1,2 +1,8 @@
 build:
-  start: "/start.sh"
+  steps:
+    - name: Install Maven
+      commands:
+        - apt update
+        - apt install -y maven
+deploy:
+  startCommand: cd backend && mvn tomcat7:run
